@@ -34,7 +34,6 @@ project_type_tags:
 type_tags:
   - test
 
-is_requires_admin_user: true
 is_always_run: false
 is_skippable: false
 run_if: ""
@@ -44,27 +43,47 @@ toolkit:
     entry_file: step.sh
 
 inputs:
+  - testproject_api_key:
+    opts:
+      title: TestProject API key
+      summary: Your TestProject API key
+      description: |
+        This can be found in the Integrations tab.
+        You can either create a new one or use an existing one.
+        To create an API Key:
+          -> API
+          -> Create API Key
+        To use an existing Key:
+          -> [API Key]
+          -> Copy
+      is_required: true
+      is_expand: true
+      is_sensitive: true
+  - testproject_project_id:
+    opts:
+      title: TestProject project id
+      summary: Your TestProject project id
+      description: |
+        This can be found in TestProject's Project tab:
+          -> My Projects
+          -> [Project] 
+          -> ... 
+          -> Copy ID
+      is_required: true
+      is_expand: true
+      is_sensitive: false
   - testproject_job_id:
     opts:
       title: TestProject job id
       summary: Your TestProject job id
-      description: ""
-      is_required: true
-      is_expand: true
-      is_sensitive: false
-  - testproject_access_key: $TESTPROJECT_ACCESS_KEY
-    opts:
-      title: TestProject access key
-      summary: Your TestProject access key
-      description: ""
-      is_required: true
-      is_expand: true
-      is_sensitive: true
-  - testproject_project_id: $TESTPROJECT_PROJECT_ID
-    opts:
-      title: TestProject access key
-      summary: Your TestProject access key
-      description: ""
+      description: |
+        This can be found in the Project tab:
+           -> My Projects
+           -> [Project] 
+           -> Test & Jobs 
+           -> [Job] 
+           -> ... 
+           -> Copy ID
       is_required: true
       is_expand: true
       is_sensitive: false

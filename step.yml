@@ -9,7 +9,8 @@
 
 title: Run a TestProject job
 summary: Run a TestProject job
-description: Run a TestProject job
+description: |-
+  Run a [TestProject](https://testproject.io/) job
 website:  https://github.com/sca-organization/bitrise-testproject-run
 source_code_url:  https://github.com/sca-organization/bitrise-testproject-run
 support_url:  https://github.com/sca-organization/bitrise-testproject-run/issues

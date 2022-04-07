@@ -49,7 +49,7 @@ inputs:
       title: TestProject API key
       summary: Your TestProject API key
       description: |
-        This can be found in the Integrations tab.
+        This can be found in the [Integrations](https://app.testproject.io/#/integrations/api) tab.
         You can either create a new one or use an existing one.
         To create an API Key:
           -> API
@@ -68,7 +68,7 @@ inputs:
         This can be found in TestProject's Project tab:
           -> My Projects
           -> [Project] 
-          -> ... 
+          -> ... (Meatball menu)
           -> Copy ID
       is_required: true
       is_expand: true
@@ -83,7 +83,7 @@ inputs:
            -> [Project] 
            -> Test & Jobs 
            -> [Job] 
-           -> ... 
+           -> ... (Meatball menu)
            -> Copy ID
       is_required: true
       is_expand: true
